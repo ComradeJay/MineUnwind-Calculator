@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Mineunwind Calculator")
 st.subheader("Which Realm:")
-dim = st.radio("",('River', 'Ranch', 'Port','Empire','Elysium'))
+dim = st.radio("",('River', 'Ranch', 'Port','Empire','Citadel'))
 st.subheader("Which Block")
 if dim=="River":
      block = st.radio(
@@ -195,10 +195,10 @@ elif dim=="Empire":
                st.header(f"You need {int(ma/64):,d} Stacks of T3 Amethyst")
           else:
                st.header(f"You need {int(ma / 64):,d} Stacks and {ma % 64} T3 Amethyst ")
-elif dim=="Elysium":
+elif dim=="Citadel":
      block = st.radio(
           "",
-          ('Marble - Purpur Mix','Purpur - Magma Mix','Magma - Obsidian Mix','Elysium Mix'))
+          ('Marble - Purpur Mix','Purpur - Magma Mix','Magma - Obsidian Mix','Citadel Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Marble - Purpur Mix':
           a=val*10
