@@ -2,52 +2,52 @@ import streamlit as st
 
 st.set_page_config(page_title="Mineunwind Calculator")
 st.subheader("Which Realm:")
-dim = st.radio("",('Neoter', 'Outpost', 'Kaeva','Inferno','Elysium'))
+dim = st.radio("",('River', 'Outpost', 'Kaeva','Inferno','Elysium'))
 st.subheader("Which Block")
-if dim=="Neoter":
+if dim=="River":
      block = st.radio(
           "",
-          ('Prismarine - Nanostone Mix', 'Nanostone - Graphite Mix', 'Graphite - Gold Mix','Neoter Mix'))
+          ('Stone - Iron Mix', 'Iron - Diamond Mix', 'Diamond - Emerald Mix','River Mix'))
      val=int(st.text_input('How Many Blocks?', 0))
-     if block=='Prismarine - Nanostone Mix':
+     if block=='Stone - Iron Mix':
           a = int(val / 64)
           b = val % 64
           if ((b % 64)==0):
-               st.header(f"You need {a:,d} Stacks of T3 Prismarine and Nanostone")
+               st.header(f"You need {a:,d} Stacks of T3 Stone and Iron")
           else:
-               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Prismarine and Nanostone")
-     elif block=="Nanostone - Graphite Mix":
+               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron")
+     elif block=="Iron - Diamond Mix":
           a = val*2
           b = int(a/64)
           c = a%64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Nanostone and Graphite")
+               st.header(f"You need {b:,d} Stacks of T3 Iron and Diamond")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Nanostone and Graphite")
-     elif block=="Graphite - Gold Mix":
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond")
+     elif block=="Diamond - Emerald Mix":
           a=val*5
           b=int(a/64)
           c=a%64
           if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Graphite and Gold")
+               st.header(f"You need {b:,d} Stacks of T3 Diamond and Emerald")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Graphite and Gold ")
+               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
      else:
           gra=val*21
-          gold=val*15
+          Emerald=val*15
           nano=val*6
           if ((nano % 64)==0):
-               st.header(f"You need {int(nano / 64):,d} Stacks of T3 Nanostone")
+               st.header(f"You need {int(nano / 64):,d} Stacks of T3 Iron")
           else:
-               st.header(f"You need {int(nano / 64):,d} Stacks and {nano % 64} T3 Nanostone")
+               st.header(f"You need {int(nano / 64):,d} Stacks and {nano % 64} T3 Iron")
           if ((gra % 64)==0):
-               st.header(f"You need {int(gra / 64):,d} Stacks of T3 Graphite")
+               st.header(f"You need {int(gra / 64):,d} Stacks of T3 Diamond")
           else:
-               st.header(f"You need {int(gra/64):,d} Stacks and {gra%64} T3 Graphite")
-          if ((gold % 64)==0):
-               st.header(f"You need {int(gold / 64):,d} Stacks of T3 Gold")
+               st.header(f"You need {int(gra/64):,d} Stacks and {gra%64} T3 Diamond")
+          if ((Emerald % 64)==0):
+               st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Emerald")
           else:
-               st.header(f"You need {int(gold / 64):,d} Stacks and {gold % 64} T3 Gold")
+               st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Emerald")
 elif dim=="Outpost":
      block = st.radio(
           "",
@@ -69,7 +69,7 @@ elif dim=="Outpost":
           else:
                st.header(f"You need {int(bass/64):,d} stacks and {bass%64} blocks of T3 Tuff")
           if ((db % 64)==0):
-               st.header(f"You need {int(db/64):,d} Stacks of T3 Gold")
+               st.header(f"You need {int(db/64):,d} Stacks of T3 Emerald")
           else:
                st.header(f"You need {int(db/64):,d} stacks and {db%64} blocks of T3 Brain Coral")
      elif block == "Brain Coral - Basalt Mix":
@@ -99,7 +99,7 @@ elif dim=="Outpost":
 elif dim=="Kaeva":
      block = st.radio(
           "",
-          ('Mossy Cobblestone - Iron Deposit Mix','Iron Deposit - Gold Deposit Mix','Gold Deposit - Diamond Deposit Mix','Kaeva Mix'))
+          ('Mossy Cobblestone - Iron Deposit Mix','Iron Deposit - Emerald Deposit Mix','Emerald Deposit - Diamond Deposit Mix','Kaeva Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Mossy Cobblestone - Iron Deposit Mix':
           a=val*8
@@ -109,7 +109,7 @@ elif dim=="Kaeva":
                st.header(f"You need {b:,d} Stacks of T3 Mossy Cobblestone and Iron Deposit")
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Mossy Cobblestone and Iron Deposit ")
-     elif block == "Iron Deposit - Gold Deposit Mix":
+     elif block == "Iron Deposit - Emerald Deposit Mix":
           id=val*10
           gd=val*9
           if ((id % 64)==0):
@@ -117,16 +117,16 @@ elif dim=="Kaeva":
           else:
                st.header(f"You need {int(id / 64):,d} Stacks and {id % 64} T3 Iron Deposit ")
           if ((gd % 64)==0):
-               st.header(f"You need {int(gd/64):,d} Stacks of T3 Gold Deposit")
+               st.header(f"You need {int(gd/64):,d} Stacks of T3 Emerald Deposit")
           else:
-               st.header(f"You need {int(gd / 64):,d} Stacks and {gd % 64} T3 Gold Deposit")           
-     elif block == "Gold Deposit - Diamond Deposit Mix":
+               st.header(f"You need {int(gd / 64):,d} Stacks and {gd % 64} T3 Emerald Deposit")           
+     elif block == "Emerald Deposit - Diamond Deposit Mix":
           gd=val*13
           dd=val*13
           if ((gd % 64)==0):
-               st.header(f"You need {int(gd/64):,d} Stacks of T3 Gold Deposit")
+               st.header(f"You need {int(gd/64):,d} Stacks of T3 Emerald Deposit")
           else:
-               st.header(f"You need {int(gd / 64):,d} Stacks and {gd % 64} T3 Gold Deposit ")
+               st.header(f"You need {int(gd / 64):,d} Stacks and {gd % 64} T3 Emerald Deposit ")
           if ((dd % 64)==0):
                st.header(f"You need {int(dd/64):,d} Stacks of T3 Diamond Deposit")
           else:
@@ -140,9 +140,9 @@ elif dim=="Kaeva":
           else:
                st.header(f"You need {int(id / 64):,d} Stacks and {id % 64} T3 Iron Deposit")
           if ((gd % 64)==0):
-               st.header(f"You need {int(gd/64):,d} Stacks of T3 Gold Deposit")
+               st.header(f"You need {int(gd/64):,d} Stacks of T3 Emerald Deposit")
           else:
-               st.header(f"You need {int(gd / 64):,d} Stacks and {gd % 64} T3 Gold Deposit ")
+               st.header(f"You need {int(gd / 64):,d} Stacks and {gd % 64} T3 Emerald Deposit ")
           if ((dd % 64)==0):
                st.header(f"You need {int(dd/64):,d} Stacks of T3 Diamond Deposit")
           else:
