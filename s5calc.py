@@ -33,9 +33,9 @@ if dim=="River":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
      else:
-          Diamond=val*21
-          Emerald=val*12
-          Iron=val*6
+          Diamond=val*36
+          Emerald=val*21
+          Iron=val*12
           if ((Iron % 64)==0):
                st.header(f"You need {int(Iron / 64):,d} Stacks of T3 Iron")
           else:
