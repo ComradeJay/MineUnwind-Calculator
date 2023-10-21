@@ -8,4 +8,6 @@ Original code: [Stresso](https://github.com/Stresso/Prisonade_Calc)
 
 *DM .comradejay (DripwardAsh) with any issues or suggestions (Note: I am a noob at coding so I can't promise amazing features)*
 
+[MineUnwind Discord Link](https://discord.gg/MGPVYTN4rs)
+
 
