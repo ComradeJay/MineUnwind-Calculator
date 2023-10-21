@@ -17,7 +17,7 @@ if dim=="River":
           else:
                st.header(f"You need {a:,d} stacks and {b} blocks of T3 Stone and Iron")
      elif block=="Iron - Diamond Mix":
-          a = val*2
+          a = val*4
           b = int(a/64)
           c = a%64
           if ((c % 64)==0):
@@ -25,7 +25,7 @@ if dim=="River":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Iron and Diamond")
      elif block=="Diamond - Emerald Mix":
-          a=val*5
+          a=val*8
           b=int(a/64)
           c=a%64
           if ((c % 64)==0):
