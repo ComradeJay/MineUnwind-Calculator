@@ -63,7 +63,7 @@ elif dim=="Ranch":
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Granite and Coal ")
      elif block == "Coal - Copper Mix":
           Redstone = val * 7
-          Copper=val*7
+          Copper=val*6
           if ((Redstone % 64)==0):
                st.header(f"You need {int(Redstone/64):,d} Stacks of T3 Coal")
           else:
