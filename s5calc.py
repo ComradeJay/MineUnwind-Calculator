@@ -231,8 +231,8 @@ elif dim=="Citadel":
           else:
                st.header(f"You need {int(Magma / 64):,d} Stacks and {Magma % 64} T3 Obsidian")
      else:
-          Obsidian = val * 110 
-          Purpur = val * 270  
+          Obsidian = val * 160 
+          Purpur = val * 110  
           Magma = val * 270
           if ((Obsidian % 64)==0):
                st.header(f"You need {int(Obsidian/64):,d} Stacks of Purpur")
