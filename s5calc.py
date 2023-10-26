@@ -249,4 +249,4 @@ elif dim=="Citadel":
 st.caption(f"Any issues message .comradejay on Discord")
 st.caption(f"Original creators stresso and illusioner_ on Discord ")
 st.caption(f"Special thanks to banishedghost and NyaaaaVie for the math <3.")
-# st.write(f"Github [link](https://github.com/ComradeJay/s5calc)")
+st.write(f"Github [link](https://github.com/ComradeJay/s5calc)")
