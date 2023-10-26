@@ -234,18 +234,18 @@ elif dim=="Citadel":
           Obsidian = val * 160 
           Purpur = val * 110  
           Magma = val * 270
-          if ((Obsidian % 64)==0):
-               st.header(f"You need {int(Obsidian/64):,d} Stacks of Purpur")
-          else:
-               st.header(f"You need {int(Obsidian / 64):,d} Stacks and {Obsidian % 64} T3 Purpur")
           if ((Purpur % 64)==0):
-               st.header(f"You need {int(Purpur/64):,d} Stacks of T3 Magma")
+               st.header(f"You need {int(Purpur/64):,d} Stacks of Purpur")
           else:
-               st.header(f"You need {int(Purpur / 64):,d} Stacks and {Purpur % 64} T3 Magma ")
+               st.header(f"You need {int(Purpur / 64):,d} Stacks and {Purpur % 64} T3 Purpur")
           if ((Magma % 64)==0):
-               st.header(f"You need {int(Magma/64):,d} Stacks of T3 Obsidian")
+               st.header(f"You need {int(Magma/64):,d} Stacks of T3 Magma")
           else:
-               st.header(f"You need {int(Magma / 64):,d} Stacks and {Magma % 64} T3 Obsidian ")
+               st.header(f"You need {int(Magma / 64):,d} Stacks and {Magma % 64} T3 Magma ")
+          if ((Obsidian % 64)==0):
+               st.header(f"You need {int(Obsidian/64):,d} Stacks of T3 Obsidian")
+          else:
+               st.header(f"You need {int(Obsidian / 64):,d} Stacks and {Obsidian % 64} T3 Obsidian ")
 st.caption(f"Any issues message .comradejay on Discord")
 st.caption(f"Original creators stresso and illusioner_ on Discord ")
 st.caption(f"Special thanks to banishedghost and NyaaaaVie for the math <3.")
