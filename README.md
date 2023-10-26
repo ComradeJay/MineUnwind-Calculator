@@ -4,7 +4,7 @@
 
 Original code: [Stresso](https://github.com/Stresso/Prisonade_Calc)
 
-**I will update this every season whether that just be name changes or prices changes**
+**I will update this every season whether that just be name changes or price changes**
 
 *DM .comradejay (DripwardAsh) with any issues or suggestions (Note: I am a noob at coding so I can't promise amazing features)*
 
