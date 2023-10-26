@@ -36,6 +36,7 @@ if dim=="River":
           Diamond=val*36
           Emerald=val*24
           Iron=val*12
+          Mix=int(Diamond, Emerald, Iron/64)
           if ((Iron % 64)==0):
                st.header(f"You need {int(Iron / 64):,d} Stacks of T3 Iron")
           else:
@@ -48,7 +49,7 @@ if dim=="River":
                st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Emerald")
           else:
                st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Emerald")
-               st.header(f"MIX")
+               st.header(f"MIX {int(Mix)}")
 elif dim=="Ranch":
      block = st.radio(
           "",
