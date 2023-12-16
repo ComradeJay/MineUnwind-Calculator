@@ -122,7 +122,7 @@ elif dim=="Rift":
                st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 Copper")           
      elif block == "Copper - Blue Gem Mix":
           Copper=val*13
-          Blue Gem=val*13
+          BlueGem=val*13
           if ((Copper % 64)==0):
                st.header(f"You need {int(Copper/64):,d} Stacks of T3 Copper")
           else:
