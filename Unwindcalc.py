@@ -15,7 +15,7 @@ if dim=="Glacial":
           if ((b % 64)==0):
                st.header(f"You need {a:,d} Stacks of T3 Blue Ice and Prismarine")
           else:
-               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Blue Ice and Iron")
+               st.header(f"You need {a:,d} stacks and {b} blocks of T3 Blue Ice and Prismarine")
      elif block=="Prismarine - Frozen Diamond Mix":
           a = val*4
           b = int(a/64)
