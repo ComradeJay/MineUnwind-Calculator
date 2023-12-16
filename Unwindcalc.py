@@ -134,7 +134,7 @@ elif dim=="Rift":
      else:
           Prismarine = val * 70 
           Copper = val * 154 
-          Blue Gem = val * 91 
+          BlueGem = val * 91 
           if ((Prismarine % 64)==0):
                st.header(f"You need {int(Prismarine/64):,d} Stacks of T3 Prismarine")
           else:
