@@ -43,11 +43,11 @@ if dim=="Glacial":
           if ((FrozenDiamond % 64)==0):
                st.header(f"You need {int(FrozenDiamond / 64):,d} Stacks of T3 Frozen Diamond")
           else:
-               st.header(f"You need {int(FrozenDiamond/64):,d} Stacks and {Frozen Diamond%64} T3 Frozen Diamond")
+               st.header(f"You need {int(FrozenDiamond/64):,d} Stacks and {FrozenDiamond%64} T3 Frozen Diamond")
           if ((FrozenEmerald % 64)==0):
                st.header(f"You need {int(FrozenEmerald / 64):,d} Stacks of T3 Frozen Emerald")
           else:
-               st.header(f"You need {int(FrozenEmerald / 64):,d} Stacks and {Frozen Emerald % 64} T3 Frozen Emerald")
+               st.header(f"You need {int(FrozenEmerald / 64):,d} Stacks and {FrozenEmerald % 64} T3 Frozen Emerald")
 elif dim=="Market":
      block = st.radio(
           "",
