@@ -62,12 +62,12 @@ elif dim=="Market":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Basalt and Red Sandstone ")
      elif block == "Red Sandstone - Artifact Mix":
-          Old Gold = val * 7
+          OldGold = val * 7
           Artifact=val*6
           if ((OldGold % 64)==0):
                st.header(f"You need {int(OldGold/64):,d} Stacks of T3 Red Sandstone")
           else:
-               st.header(f"You need {int(OldGold/64):,d} stacks and {Old Gold%64} blocks of T3 Red Sandstone")
+               st.header(f"You need {int(OldGold/64):,d} stacks and {OldGold%64} blocks of T3 Red Sandstone")
           if ((Artifact % 64)==0):
                st.header(f"You need {int(Artifact/64):,d} Stacks of T3 Emerald")
           else:
