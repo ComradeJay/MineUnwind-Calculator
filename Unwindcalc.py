@@ -151,7 +151,6 @@ elif dim=="Coast":
      block = st.radio(
           "",
           ('Yellow Coral - Pink Coral Mix','Pink Coral - Fire Coral Mix','Fire Coral - Blue Coral Mix','Coast Mix'))
-            ('Moss Stone - Pink Coral Mix','Pink Coral - Fire Coral Relic Mix','Fire Coral Relic - Amethyst Mix','Coast Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Yellow Coral - Pink Coral Mix':
           a=val*9
