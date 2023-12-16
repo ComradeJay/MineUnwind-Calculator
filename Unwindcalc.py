@@ -33,8 +33,8 @@ if dim=="Glacial":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Frozen Diamond and Frozen Emerald ")
      else:
-          FDiamond=val*36
-          FEmerald=val*24
+          FrozenDiamond=val*36
+          FrozenEmerald=val*24
           Prismarine=val*12
           if ((Prismarine % 64)==0):
                st.header(f"You need {int(Prismarine / 64):,d} Stacks of T3 Prismarine")
