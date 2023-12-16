@@ -41,13 +41,13 @@ if dim=="Glacial":
           else:
                st.header(f"You need {int(Prismarine / 64):,d} Stacks and {Prismarine % 64} T3 Prismarine")
           if ((FrozenDiamond % 64)==0):
-               st.header(f"You need {int(Frozen Diamond / 64):,d} Stacks of T3 Frozen Diamond")
+               st.header(f"You need {int(FrozenDiamond / 64):,d} Stacks of T3 Frozen Diamond")
           else:
-               st.header(f"You need {int(Frozen Diamond/64):,d} Stacks and {Frozen Diamond%64} T3 Frozen Diamond")
-          if ((Frozen Emerald % 64)==0):
-               st.header(f"You need {int(Frozen Emerald / 64):,d} Stacks of T3 Frozen Emerald")
+               st.header(f"You need {int(FrozenDiamond/64):,d} Stacks and {Frozen Diamond%64} T3 Frozen Diamond")
+          if ((FrozenEmerald % 64)==0):
+               st.header(f"You need {int(FrozenEmerald / 64):,d} Stacks of T3 Frozen Emerald")
           else:
-               st.header(f"You need {int(Frozen Emerald / 64):,d} Stacks and {Frozen Emerald % 64} T3 Frozen Emerald")
+               st.header(f"You need {int(FrozenEmerald / 64):,d} Stacks and {Frozen Emerald % 64} T3 Frozen Emerald")
 elif dim=="Market":
      block = st.radio(
           "",
@@ -64,10 +64,10 @@ elif dim=="Market":
      elif block == "Red Sandstone - Artifact Mix":
           Old Gold = val * 7
           Artifact=val*6
-          if ((Old Gold % 64)==0):
-               st.header(f"You need {int(Old Gold/64):,d} Stacks of T3 Red Sandstone")
+          if ((OldGold % 64)==0):
+               st.header(f"You need {int(OldGold/64):,d} Stacks of T3 Red Sandstone")
           else:
-               st.header(f"You need {int(Old Gold/64):,d} stacks and {Old Gold%64} blocks of T3 Red Sandstone")
+               st.header(f"You need {int(OldGold/64):,d} stacks and {Old Gold%64} blocks of T3 Red Sandstone")
           if ((Artifact % 64)==0):
                st.header(f"You need {int(Artifact/64):,d} Stacks of T3 Emerald")
           else:
@@ -84,18 +84,18 @@ elif dim=="Market":
           RedSandstone = val * 42
           Artifact = val * 120
           OldGold = val * 84
-          if ((Red Sandstone % 64)==0):
-               st.header(f"You need {int(Red Sandstone / 64):,d} Stacks of T3 Red Sandstone")
+          if ((RedSandstone % 64)==0):
+               st.header(f"You need {int(RedSandstone / 64):,d} Stacks of T3 Red Sandstone")
           else:
-               st.header(f"You need {int(Red Sandstone / 64):,d} Stacks and {Red Sandstone % 64} T3 Red Sandstone")
+               st.header(f"You need {int(RedSandstone / 64):,d} Stacks and {Red Sandstone % 64} T3 Red Sandstone")
           if ((Artifact % 64)==0):
                st.header(f"You need {int(Artifact / 64):,d} Stacks of T3 Artifact")
           else:
                st.header(f"You need {int(Artifact/64):,d} Stacks and {Artifact%64} T3 Artifact")
-          if ((Old Gold % 64)==0):
-               st.header(f"You need {int(Old Gold / 64):,d} Stacks of T3 Old Gold")
+          if ((OldGold % 64)==0):
+               st.header(f"You need {int(OldGold / 64):,d} Stacks of T3 Old Gold")
           else:
-               st.header(f"You need {int(Old Gold / 64):,d} Stacks and {Old Gold % 64} T3 Old Gold")
+               st.header(f"You need {int(OldGold / 64):,d} Stacks and {Old Gold % 64} T3 Old Gold")
 elif dim=="Rift":
      block = st.radio(
           "",
@@ -127,10 +127,10 @@ elif dim=="Rift":
                st.header(f"You need {int(Copper/64):,d} Stacks of T3 Copper")
           else:
                st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 Oceanstone ")
-          if ((Blue Gem % 64)==0):
-               st.header(f"You need {int(Blue Gem/64):,d} Stacks of T3 Blue Gem")
+          if ((BlueGem % 64)==0):
+               st.header(f"You need {int(BlueGem/64):,d} Stacks of T3 Blue Gem")
           else:
-               st.header(f"You need {int(Blue Gem / 64):,d} Stacks and {Blue Gem % 64} T3 Blue Gem")        
+               st.header(f"You need {int(BlueGem / 64):,d} Stacks and {Blue Gem % 64} T3 Blue Gem")        
      else:
           Prismarine = val * 70 
           Copper = val * 154 
@@ -143,14 +143,15 @@ elif dim=="Rift":
                st.header(f"You need {int(Copper/64):,d} Stacks of T3 Copper")
           else:
                st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 Copper ")
-          if ((Blue Gem % 64)==0):
-               st.header(f"You need {int(Blue Gem/64):,d} Stacks of T3 Blue Gem")
+          if ((BlueGem % 64)==0):
+               st.header(f"You need {int(BlueGem/64):,d} Stacks of T3 Blue Gem")
           else:
-               st.header(f"You need {int(Blue Gem / 64):,d} Stacks and {Blue Gem % 64} T3 Blue Gem ")
+               st.header(f"You need {int(BlueGem / 64):,d} Stacks and {Blue Gem % 64} T3 Blue Gem ")
 elif dim=="Coast":
      block = st.radio(
           "",
           ('Yellow Coral - Pink Coral Mix','Pink Coral - Fire Coral Mix','Fire Coral - Blue Coral Mix','Coast Mix'))
+            ('Moss Stone - Pink Coral Mix','Pink Coral - Fire Coral Relic Mix','Fire Coral Relic - Amethyst Mix','Coast Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Yellow Coral - Pink Coral Mix':
           a=val*9
@@ -169,32 +170,32 @@ elif dim=="Coast":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Pink Coral and Fire Coral ")
      elif block == "Fire Coral - Blue Coral Mix":
-          Aztec=val*15
+          Fire Coral=val*15
           Blue Coral=val*15
-          if ((Aztec % 64)==0):
-               st.header(f"You need {int(Aztec/64):,d} Stacks of T3 Fire Coral ")
+          if ((Fire Coral % 64)==0):
+               st.header(f"You need {int(Fire Coral/64):,d} Stacks of T3 Fire Coral ")
           else:
-               st.header(f"You need {int(Aztec / 64):,d} Stacks and {Aztec % 64} T3 Fire Coral  ")
+               st.header(f"You need {int(Fire Coral / 64):,d} Stacks and {Fire Coral % 64} T3 Fire Coral  ")
           if ((Blue Coral % 64)==0):
-               st.header(f"You need {int(Blue Coral/64):,d} Stacks of T3  Blue Coral")
+               st.header(f"You need {int(BlueCoral/64):,d} Stacks of T3  Blue Coral")
           else:
-               st.header(f"You need {int(Blue Coral / 64):,d} Stacks and {Blue Coral % 64} T3  Blue Coral")
+               st.header(f"You need {int(BlueCoral / 64):,d} Stacks and {Blue Coral % 64} T3  Blue Coral")
      else:
-          Star = val * 77 
-          Aztec = val * 168 
-          Blue Coral = val * 105 
-          if ((Star % 64)==0):
-               st.header(f"You need {int(Star/64):,d} Stacks of T3 Pink Coral ")
+          PinkCoral = val * 77 
+          FireCoral = val * 168 
+          BlueCoral = val * 105 
+          if ((PinkCoral % 64)==0):
+               st.header(f"You need {int(PinkCoral/64):,d} Stacks of T3 Pink Coral ")
           else:
-               st.header(f"You need {int(Star / 64):,d} Stacks and {Star % 64} T3 Pink Coral ")
-          if ((Aztec % 64)==0):
-               st.header(f"You need {int(Aztec/64):,d} Stacks of T3  Fire Coral")
+               st.header(f"You need {int(PinkCoral / 64):,d} Stacks and {PinkCoral % 64} T3 Pink Coral ")
+          if ((FireCoral % 64)==0):
+               st.header(f"You need {int(FireCoral/64):,d} Stacks of T3  Fire Coral")
           else:
-               st.header(f"You need {int(Aztec / 64):,d} Stacks and {Aztec % 64} T3  Fire Coral ")
-          if ((Blue Coral % 64)==0):
-               st.header(f"You need {int(Blue Coral/64):,d} Stacks of T3 Blue Coral")
+               st.header(f"You need {int(FireCoral / 64):,d} Stacks and {FireCoral % 64} T3  Fire Coral ")
+          if ((BlueCoral % 64)==0):
+               st.header(f"You need {int(BlueCoral/64):,d} Stacks of T3 Blue Coral")
           else:
-               st.header(f"You need {int(Blue Coral / 64):,d} Stacks and {Blue Coral % 64} T3 Blue Coral ")
+               st.header(f"You need {int(BlueCoral / 64):,d} Stacks and {BlueCoral % 64} T3 Blue Coral ")
 elif dim=="Wreck":
      block = st.radio(
           "",
