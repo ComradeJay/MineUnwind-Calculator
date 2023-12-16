@@ -87,7 +87,7 @@ elif dim=="Market":
           if ((RedSandstone % 64)==0):
                st.header(f"You need {int(RedSandstone / 64):,d} Stacks of T3 Red Sandstone")
           else:
-               st.header(f"You need {int(RedSandstone / 64):,d} Stacks and {Red Sandstone % 64} T3 Red Sandstone")
+               st.header(f"You need {int(RedSandstone / 64):,d} Stacks and {RedSandstone % 64} T3 Red Sandstone")
           if ((Artifact % 64)==0):
                st.header(f"You need {int(Artifact / 64):,d} Stacks of T3 Artifact")
           else:
@@ -95,7 +95,7 @@ elif dim=="Market":
           if ((OldGold % 64)==0):
                st.header(f"You need {int(OldGold / 64):,d} Stacks of T3 Old Gold")
           else:
-               st.header(f"You need {int(OldGold / 64):,d} Stacks and {Old Gold % 64} T3 Old Gold")
+               st.header(f"You need {int(OldGold / 64):,d} Stacks and {OldGold % 64} T3 Old Gold")
 elif dim=="Rift":
      block = st.radio(
           "",
@@ -130,7 +130,7 @@ elif dim=="Rift":
           if ((BlueGem % 64)==0):
                st.header(f"You need {int(BlueGem/64):,d} Stacks of T3 Blue Gem")
           else:
-               st.header(f"You need {int(BlueGem / 64):,d} Stacks and {Blue Gem % 64} T3 Blue Gem")        
+               st.header(f"You need {int(BlueGem / 64):,d} Stacks and {BlueGem % 64} T3 Blue Gem")        
      else:
           Prismarine = val * 70 
           Copper = val * 154 
@@ -146,7 +146,7 @@ elif dim=="Rift":
           if ((BlueGem % 64)==0):
                st.header(f"You need {int(BlueGem/64):,d} Stacks of T3 Blue Gem")
           else:
-               st.header(f"You need {int(BlueGem / 64):,d} Stacks and {Blue Gem % 64} T3 Blue Gem ")
+               st.header(f"You need {int(BlueGem / 64):,d} Stacks and {BlueGem % 64} T3 Blue Gem ")
 elif dim=="Coast":
      block = st.radio(
           "",
@@ -169,16 +169,16 @@ elif dim=="Coast":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Pink Coral and Fire Coral ")
      elif block == "Fire Coral - Blue Coral Mix":
-          Fire Coral=val*15
-          Blue Coral=val*15
+          FireCoral=val*15
+          BlueCoral=val*15
           if ((Fire Coral % 64)==0):
-               st.header(f"You need {int(Fire Coral/64):,d} Stacks of T3 Fire Coral ")
+               st.header(f"You need {int(FireCoral/64):,d} Stacks of T3 Fire Coral ")
           else:
-               st.header(f"You need {int(Fire Coral / 64):,d} Stacks and {Fire Coral % 64} T3 Fire Coral  ")
+               st.header(f"You need {int(FireCoral / 64):,d} Stacks and {FireCoral % 64} T3 Fire Coral  ")
           if ((Blue Coral % 64)==0):
                st.header(f"You need {int(BlueCoral/64):,d} Stacks of T3  Blue Coral")
           else:
-               st.header(f"You need {int(BlueCoral / 64):,d} Stacks and {Blue Coral % 64} T3  Blue Coral")
+               st.header(f"You need {int(BlueCoral / 64):,d} Stacks and {BlueCoral % 64} T3  Blue Coral")
      else:
           PinkCoral = val * 77 
           FireCoral = val * 168 
