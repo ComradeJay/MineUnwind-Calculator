@@ -171,11 +171,11 @@ elif dim=="Coast":
      elif block == "Fire Coral - Blue Coral Mix":
           FireCoral=val*15
           BlueCoral=val*15
-          if ((Fire Coral % 64)==0):
+          if ((FireCoral % 64)==0):
                st.header(f"You need {int(FireCoral/64):,d} Stacks of T3 Fire Coral ")
           else:
                st.header(f"You need {int(FireCoral / 64):,d} Stacks and {FireCoral % 64} T3 Fire Coral  ")
-          if ((Blue Coral % 64)==0):
+          if ((BlueCoral % 64)==0):
                st.header(f"You need {int(BlueCoral/64):,d} Stacks of T3  Blue Coral")
           else:
                st.header(f"You need {int(BlueCoral / 64):,d} Stacks and {BlueCoral % 64} T3  Blue Coral")
