@@ -126,19 +126,19 @@ elif dim=="Rift":
           if ((Copper % 64)==0):
                st.header(f"You need {int(Copper/64):,d} Stacks of T3 Copper")
           else:
-               st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 Oceanstone ")
+               st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 OceaCoppernstone ")
           if ((BlueGem % 64)==0):
                st.header(f"You need {int(BlueGem/64):,d} Stacks of T3 Blue Gem")
           else:
                st.header(f"You need {int(BlueGem / 64):,d} Stacks and {BlueGem % 64} T3 Blue Gem")        
      else:
-          Prismarine = val * 70 
+          Coal = val * 70 
           Copper = val * 154 
           BlueGem = val * 91 
-          if ((Prismarine % 64)==0):
-               st.header(f"You need {int(Prismarine/64):,d} Stacks of T3 Prismarine")
+          if ((Coal % 64)==0):
+               st.header(f"You need {int(Coal/64):,d} Stacks of T3 Coal")
           else:
-               st.header(f"You need {int(Prismarine / 64):,d} Stacks and {Prismarine % 64} T3 Prismarine")
+               st.header(f"You need {int(Coal / 64):,d} Stacks and {Coal % 64} T3 Coal")
           if ((Copper % 64)==0):
                st.header(f"You need {int(Copper/64):,d} Stacks of T3 Copper")
           else:
