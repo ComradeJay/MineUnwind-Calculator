@@ -126,7 +126,7 @@ elif dim=="Rift":
           if ((Copper % 64)==0):
                st.header(f"You need {int(Copper/64):,d} Stacks of T3 Copper")
           else:
-               st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 OceaCoppernstone ")
+               st.header(f"You need {int(Copper / 64):,d} Stacks and {Copper % 64} T3 Copper ")
           if ((BlueGem % 64)==0):
                st.header(f"You need {int(BlueGem/64):,d} Stacks of T3 Blue Gem")
           else:
