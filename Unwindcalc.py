@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.image('S6.webp')
+
 st.set_page_config(page_title="Mineunwind Calculator")
 st.subheader("Which Realm:")
 dim = st.radio("",('Glacial', 'Market', 'Rift','Coast','Wreck'))
