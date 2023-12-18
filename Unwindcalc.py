@@ -246,7 +246,7 @@ elif dim=="Wreck":
                st.header(f"You need {int(Amethyst/64):,d} Stacks of T3 Amethyst")
           else:
                st.header(f"You need {int(Amethyst / 64):,d} Stacks and {Amethyst % 64} T3 Amethyst ")
-st.caption(f"Any issues message .comradejay on Discord")
+st.caption(f"Any issues ping .comradejay on Discord")
 st.caption(f"Original creators stresso and illusioner_ on Discord ")
 st.caption(f"Special thanks to banishedghost and NyaaaaVie for the math <3.")
 st.write(f"Github [link](https://github.com/ComradeJay/s5calc)")
