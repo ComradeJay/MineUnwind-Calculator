@@ -122,7 +122,7 @@ elif dim=="Colosseum":
           else:
                st.header(f"You need {int(SilverCoin / 64):,d} Stacks and {SilverCoin % 64} T3 Silver Coin")           
      elif block == "Silver Coin - Gold Coin Mix":
-          Silver Coin=val*13
+          SilverCoin=val*13
           GoldCoin=val*13
           if ((SilverCoin % 64)==0):
                st.header(f"You need {int(SilverCoin/64):,d} Stacks of T3 Silver Coin")
