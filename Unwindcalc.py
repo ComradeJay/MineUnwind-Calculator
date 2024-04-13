@@ -55,8 +55,8 @@ elif dim=="Farm":
           ('Dirt - Grass Mix','Grass - Orange Mix','Orange - Lemon Mix','Farm Mix'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == "Dirt - Grass Mix":
-          Dirt = val * 7
-          Grass= val * 6
+          Dirt = val * 3
+          Grass= val * 4
           if ((Dirt % 64)==0):
                st.header(f"You need {int(Dirt/64):,d} Stacks of T3 Dirt")
           else:
