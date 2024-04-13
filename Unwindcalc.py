@@ -5,7 +5,7 @@ st.set_page_config(page_title="Mineunwind Calculator")
 st.subheader("Which Realm:")
 dim = st.radio("",('City', 'Farm', 'Colosseum','Cavern','Graveyard'))
 st.subheader("Which Block")
-if dim=="City":
+if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
         ('Stone - Iron Mix', 'Iron - Diamond Mix', 'Diamond - Emerald Mix','City Mix'))
@@ -49,7 +49,9 @@ if dim=="City":
                st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Frozen Emerald")
           else:
                st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Frozen Emerald")
-elif dim=="Farm":
+
+
+elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
           ('Dirt - Grass Mix','Grass - Orange Mix','Orange - Lemon Mix','Farm Mix'))
@@ -65,7 +67,6 @@ elif dim=="Farm":
                st.header(f"You need {int(Grass/64):,d} Stacks of T3 Grass")
           else:
                st.header(f"You need {int(Grass/64):,d} stacks and {Grass%64} blocks of T3 Grass")
-
      elif block == "Grass - Orange Mix":
           Grass = val * 7
           Orange= val * 6
@@ -101,7 +102,9 @@ elif dim=="Farm":
                st.header(f"You need {int(Lemon / 64):,d} Stacks of T3 Lemon")
           else:
                st.header(f"You need {int(Lemon / 64):,d} Stacks and {Lemon % 64} T3 Lemon")
-elif dim=="Colosseum":
+
+
+elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
           ('Copper - Blood Mix','Blood - Silver Coin Mix','Silver Coin - Gold Coin Mix','Colosseum Mix'))
@@ -152,7 +155,9 @@ elif dim=="Colosseum":
                st.header(f"You need {int(GoldCoin/64):,d} Stacks of T3 Gold Coin")
           else:
                st.header(f"You need {int(GoldCoin / 64):,d} Stacks and {GoldCoin % 64} T3 Gold Coin ")
-elif dim=="Cavern":
+
+
+elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
           ('Calcite - Amethyst Mix','Amethyst - Gilded Gold Mix','Gilded Gold - Limonite Mix','Cavern Mix'))
@@ -166,13 +171,16 @@ elif dim=="Cavern":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Calcite and Amethyst ")
      elif block == "Amethyst - Gilded Gold Mix":
-          a = val * 11
-          b = int(a / 64)
-          c = a % 64
-          if ((c % 64)==0):
-               st.header(f"You need {b:,d} Stacks of T3 Amethyst and Gilded Gold")
+          Amethyst=val*11
+          GildedGold=val*9
+          if ((Amethyst % 64)==0):
+               st.header(f"You need {int(Amethyst/64):,d} Stacks of T3 Amethyst ")
           else:
-               st.header(f"You need {b:,d} stacks and {c} blocks of T3 Amethyst and Gilded Gold ")
+               st.header(f"You need {int(Amethyst / 64):,d} Stacks and {Amethyst % 64} T3 Amethyst")
+          if ((GildedGold % 64)==0):
+               st.header(f"You need {int(GildedGold/64):,d} Stacks of T3  Gilded Gold")
+          else:
+               st.header(f"You need {int(GildedGold / 64):,d} Stacks and {GildedGold % 64} T3  Gilded Gold")
      elif block == "Gilded Gold - Limonite Mix":
           GildedGold=val*15
           Limonite=val*15
@@ -201,7 +209,8 @@ elif dim=="Cavern":
           else:
                st.header(f"You need {int(Limonite / 64):,d} Stacks and {Limonite % 64} T3 Limonite ")
 
-elif dim=="Graveyard":
+
+elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
           ('Necrosol - Tombstone Mix','Tombstone - Coffin Mix','Coffin - Crying Soul Mix','Graveyard Mix'))
