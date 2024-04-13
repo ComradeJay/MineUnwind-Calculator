@@ -1,4 +1,4 @@
-![MineUnwind](https://cdn.discordapp.com/banners/702532548458315867/fbb553ff331e5622d3a33f11080fa47e.webp?size=1024)
+![MineUnwind](https://cdn.discordapp.com/banners/702532548458315867/cd9ea7ccd9dee847ebebbd7e5655b20b.webp?size=1024&format=webp&width=0&height=128)
 
 # This is a mix calculator for the Minecraft server MineUnwind.com # 
 
