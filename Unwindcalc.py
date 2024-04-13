@@ -63,12 +63,12 @@ elif dim=="Farm":
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Dirt and Grass ")
      elif block == "Grass - Orange Mix":
-          Lemon = val * 7
-          Orange=val*6
-          if ((Lemon % 64)==0):
-               st.header(f"You need {int(Lemon/64):,d} Stacks of T3 Grass")
+          Grass = val * 7
+          Orange= val * 6
+          if ((Grass % 64)==0):
+               st.header(f"You need {int(Grass/64):,d} Stacks of T3 Grass")
           else:
-               st.header(f"You need {int(Lemon/64):,d} stacks and {Lemon%64} blocks of T3 Grass")
+               st.header(f"You need {int(Grass/64):,d} stacks and {Grass%64} blocks of T3 Grass")
           if ((Orange % 64)==0):
                st.header(f"You need {int(Orange/64):,d} Stacks of T3 Orange")
           else:
