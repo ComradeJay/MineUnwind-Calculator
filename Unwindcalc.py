@@ -123,7 +123,7 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
           if ((Blood % 64)==0):
                st.header(f"You need {int(Blood/64):,d} Stacks of T3 Blood")
           else:
-               st.header(f"You need {int(Blood / 64):,d} Stacks and {Blood % 64} T3 Iron ")
+               st.header(f"You need {int(Blood / 64):,d} Stacks and {Blood % 64} T3 Blood ")
           if ((SilverCoin % 64)==0):
                st.header(f"You need {int(SilverCoin/64):,d} Stacks of T3 Silver Coin")
           else:
