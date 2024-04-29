@@ -34,13 +34,15 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Diamond and Emerald ")
      elif block=='City Mix (Mix only)':
-          ID = val*12
-          DE = val*24
+          ID = val+4*3
+          DE = val+8*3
           City = (ID+DE/64)
           if ((ID % 64)==0):
                st.header(f"You need {int(ID / 64):,d} Stacks of Iron - Diamond Mix")
           else:
                st.header(f"You need {int(ID / 64):,d} Stacks if Iron - Diamond Mix and {ID % 64} T3 Iron")
+          
+          
           if ((DE % 64)==0):
                st.header(f"You need {int(DE / 64):,d} Stacks of T3 Diamond")
           else:
