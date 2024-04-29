@@ -39,7 +39,7 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
           if ((ID % 64)==0):
                st.header(f"You need {int(ID / 64):,d} Stacks of Iron - Diamond Mix")
           else:
-               st.header(f"You need {int(ID / 64):,d} Stacks of Iron - Diamond Mix and {ID/val} Iron - Diamond Mix")
+               st.header(f"You need {int(ID / 64):,d} Stacks of Iron - Diamond Mix and {ID%val} Iron - Diamond Mix")
           
           
           if ((DE % 64)==0):
