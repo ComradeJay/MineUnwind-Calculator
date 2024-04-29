@@ -273,7 +273,7 @@ elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(CryingSoul/64):,d} Stacks of T3 Crying Soul")
           else:
                st.header(f"You need {int(CryingSoul / 64):,d} Stacks and {CryingSoul % 64} T3 Crying Soul ")
-          st.header(f"You need {TC % 64} Stacks of Tombstone and Coffin Mix and {CC % 64} Stacks of Coffin and Crying Soul Mix")
+          st.header(f"You need {int(TC / 64):,d} Stacks of Tombstone and Coffin Mix and {int(CC / 64):,d} Stacks of Coffin and Crying Soul Mix")
 
 
 st.caption(f"Any issues ping .comradejay on Discord")
