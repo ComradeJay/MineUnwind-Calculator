@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Mineunwind Calculator")
 st.subheader("Which Realm:")
 dim = st.radio("",('City', 'Farm', 'Colosseum','Cavern','Graveyard'))
-st.subheader("Which Block")
+st.subheader("Which Mix")
 if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
