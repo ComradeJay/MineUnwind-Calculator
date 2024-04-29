@@ -113,7 +113,7 @@ elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Lemon / 64):,d} Stacks of T3 Lemon")
           else:
                st.header(f"You need {int(Lemon / 64):,d} Stacks and {Lemon % 64} T3 Lemon")
-          st.header(f"You need {int(GO / 64):,d} Stacks of Grass and Orange Mix and {int(OL / 64):,d} Stacks of Orange and Lemon Mix")
+          #st.header(f"You need {int(GO / 64):,d} Stacks of Grass and Orange Mix and {int(OL / 64):,d} Stacks of Orange and Lemon Mix")
 
 
 elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
@@ -168,7 +168,7 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(GoldCoin/64):,d} Stacks of T3 Gold Coin")
           else:
                st.header(f"You need {int(GoldCoin / 64):,d} Stacks and {GoldCoin % 64} T3 Gold Coin ")
-          st.header(f"You need {int(Colo / 64):,d} Stacks of Blood and Silver Coin Mix and {int(Colo / 64):,d} Stacks of Silver and Gold Coin Mix")
+          #st.header(f"You need {int(Colo / 64):,d} Stacks of Blood and Silver Coin Mix and {int(Colo / 64):,d} Stacks of Silver and Gold Coin Mix")
 
 elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
@@ -222,7 +222,7 @@ elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Limonite/64):,d} Stacks of T3 Limonite")
           else:
                st.header(f"You need {int(Limonite / 64):,d} Stacks and {Limonite % 64} T3 Limonite ")
-          st.header(f"You need {int(Cavern / 64):,d} Stacks of Amethyst and Gilded Gold Mix and {int(Cavern / 64):,d} Stacks of Gilded Gold and Limonite Mix")
+          #st.header(f"You need {int(Cavern / 64):,d} Stacks of Amethyst and Gilded Gold Mix and {int(Cavern / 64):,d} Stacks of Gilded Gold and Limonite Mix")
 
 elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
@@ -276,7 +276,7 @@ elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(CryingSoul/64):,d} Stacks of T3 Crying Soul")
           else:
                st.header(f"You need {int(CryingSoul / 64):,d} Stacks and {CryingSoul % 64} T3 Crying Soul ")
-          st.header(f"You need {int(Grave / 64):,d} Stacks of Tombstone and Coffin Mix and {int(Grave / 64):,d} Stacks of Coffin and Crying Soul Mix")
+          #st.header(f"You need {int(Grave / 64):,d} Stacks of Tombstone and Coffin Mix and {int(Grave / 64):,d} Stacks of Coffin and Crying Soul Mix")
 
 
 st.caption(f"Any issues ping .comradejay on Discord")
