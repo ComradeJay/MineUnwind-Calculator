@@ -8,7 +8,7 @@ st.subheader("Which Mix")
 if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
-        ('Stone - Iron Mix', 'Iron - Diamond Mix', 'Diamond - Emerald Mix','City Mix'))
+        ('Stone - Iron Mix', 'Iron - Diamond Mix', 'Diamond - Emerald Mix','City Mix', 'City Mix (Mix only)'))
      val=int(st.text_input('How Many Blocks?', 0))
      if block=='Stone - Iron Mix':
           a = int(val / 64)
