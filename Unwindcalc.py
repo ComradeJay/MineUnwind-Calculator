@@ -55,7 +55,7 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
           Diamond = val*36
           Emerald = val*24
           Iron = val*12
-          City = (val/72)
+          City = (Diamond,Emerald,Iron%64)
           if ((Iron % 64)==0):
                st.header(f"You need {int(Iron / 64):,d} Stacks of T3 Iron")
           else:
