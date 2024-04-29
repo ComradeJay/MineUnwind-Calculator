@@ -42,7 +42,7 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
           fe=(4)
           City=(24*3)
           if ((Iron % 64)==0):
-               st.header(f"You need {int(City / 64):,d} Stacks of T3 Iron {City}")
+               st.header(f"You need {int(Iron / 64):,d} Stacks of T3 Iron {City}")
           else:
                st.header(f"You need {int(Iron / 64):,d} Stacks and {Iron % 64} T3 Iron")
           if ((Diamond % 64)==0):
