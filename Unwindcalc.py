@@ -49,7 +49,7 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Frozen Emerald")
           else:
                st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Frozen Emerald")
-          st.header(f"You need X Stacks and X Mix")
+          st.header(f"You need 3 Stacks of Iron and Diamond Mix and X Stacks of Diamond and Emerald Mix")
 
 
 elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
