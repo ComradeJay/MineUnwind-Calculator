@@ -45,12 +45,7 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
           if ((DE % 64)==0):
                st.header(f"{int(DE / 64):,d} Stacks of Diamond - Emerald Mix")
           else:
-               st.header(f"{int(DE/64):,d} Stacks and {DE%64} Blocks of Diamond - Emerald Mix")
-          # if ((Emerald % 64)==0):
-          #      st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Emerald")
-          # else:
-          #      st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Emerald")
-     
+               st.header(f"{int(DE/64):,d} Stacks and {DE%64} Blocks of Diamond - Emerald Mix")  
      else:
           Diamond = val*36
           Emerald = val*24
@@ -67,13 +62,12 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Emerald")
           else:
                st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Emerald")
-     #st.header(f"You need {int(City / 64):,d} Stacks of Iron and Diamond Mix and {int(City / 64):,d} Stacks of Diamond and Emerald Mix")
 
 
 elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
-          ('Dirt - Grass Mix','Grass - Orange Mix','Orange - Lemon Mix','Farm Mix'))
+          ('Dirt - Grass Mix','Grass - Orange Mix','Orange - Lemon Mix','Farm Mix', 'Farm Mix (Mix only)'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == "Dirt - Grass Mix":
           Dirt = val * 3
@@ -105,12 +99,21 @@ elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {b:,d} Stacks of T3 Orange and Lemon")
           else:
                st.header(f"You need {b:,d} stacks and {c} blocks of T3 Orange and Lemon ")
+     elif block=='Farm Mix (Mix only)':
+          GO = val*6
+          OL = val*7
+          if ((GO % 64)==0):
+               st.header(f"{int(GO / 64):,d} Stacks of Grass - Orange Mix")
+          else:
+               st.header(f"{int(GO / 64):,d} Stacks and {GO%64} Blocks of Grass - Orange Mix")
+          if ((OL % 64)==0):
+               st.header(f"{int(OL / 64):,d} Stacks of Orange - Lemon Mix")
+          else:
+               st.header(f"{int(OL/64):,d} Stacks and {OL%64} Blocks of Orange - Lemon Mix")
      else:
           Grass = val * 42
           Orange = val * 120
           Lemon = val * 84
-          GO = val*6
-          OL = val*7
           if ((Grass % 64)==0):
                st.header(f"You need {int(Grass / 64):,d} Stacks of T3 Grass")
           else:
@@ -123,7 +126,6 @@ elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Lemon / 64):,d} Stacks of T3 Lemon")
           else:
                st.header(f"You need {int(Lemon / 64):,d} Stacks and {Lemon % 64} T3 Lemon")
-          #st.header(f"You need {int(GO / 64):,d} Stacks of Grass and Orange Mix and {int(OL / 64):,d} Stacks of Orange and Lemon Mix")
 
 
 elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
@@ -161,11 +163,21 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(GoldCoin/64):,d} Stacks of T3 Gold Coin")
           else:
                st.header(f"You need {int(GoldCoin / 64):,d} Stacks and {GoldCoin % 64} T3 Gold Coin")        
+     elif block=='Colosseum Mix (Mix only)':
+          BS = val*7
+          SG = val*7
+          if ((BS % 64)==0):
+               st.header(f"{int(BS / 64):,d} Stacks of Blood - Silver Mix")
+          else:
+               st.header(f"{int(BS / 64):,d} Stacks and {BS%64} Blocks of Blood - Silver Mix")
+          if ((SG % 64)==0):
+               st.header(f"{int(SG / 64):,d} Stacks of Silver - Gold Coin Mix")
+          else:
+               st.header(f"{int(SG/64):,d} Stacks and {SG%64} Blocks of Silver - Gold Coin Mix")
      else:
           Blood = val * 70 
           SilverCoin = val * 154 
           GoldCoin = val * 91 
-          Colo=val*7
           if ((Blood % 64)==0):
                st.header(f"You need {int(Blood/64):,d} Stacks of T3 Blood")
           else:
@@ -178,7 +190,6 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(GoldCoin/64):,d} Stacks of T3 Gold Coin")
           else:
                st.header(f"You need {int(GoldCoin / 64):,d} Stacks and {GoldCoin % 64} T3 Gold Coin ")
-          #st.header(f"You need {int(Colo / 64):,d} Stacks of Blood and Silver Coin Mix and {int(Colo / 64):,d} Stacks of Silver and Gold Coin Mix")
 
 elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
@@ -215,11 +226,21 @@ elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Limonite/64):,d} Stacks of T3  Limonite")
           else:
                st.header(f"You need {int(Limonite / 64):,d} Stacks and {Limonite % 64} T3  Limonite")
+     elif block=='Cavern Mix (Mix only)':
+          AG = val*7
+          GL = val*7
+          if ((AG % 64)==0):
+               st.header(f"{int(AG / 64):,d} Stacks of Amethyst - Gilded Gold Mix")
+          else:
+               st.header(f"{int(AG / 64):,d} Stacks and {AG%64} Blocks of Amethyst - Gilded Gold Mix")
+          if ((GL % 64)==0):
+               st.header(f"{int(GL / 64):,d} Stacks of Gilded Gold - Limonite Mix")
+          else:
+               st.header(f"{int(GL/64):,d} Stacks and {GL%64} Blocks of Gilded Gold - Limonite Mix")
      else:
           Amethyst = val * 77 
           GildedGold = val * 168 
           Limonite = val * 105 
-          Cavern=val*7
           if ((Amethyst % 64)==0):
                st.header(f"You need {int(Amethyst/64):,d} Stacks of T3 Amethyst ")
           else:
@@ -232,7 +253,7 @@ elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Limonite/64):,d} Stacks of T3 Limonite")
           else:
                st.header(f"You need {int(Limonite / 64):,d} Stacks and {Limonite % 64} T3 Limonite ")
-          #st.header(f"You need {int(Cavern / 64):,d} Stacks of Amethyst and Gilded Gold Mix and {int(Cavern / 64):,d} Stacks of Gilded Gold and Limonite Mix")
+
 
 elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
@@ -269,11 +290,21 @@ elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Coffin/64):,d} Stacks of T3 Crying Soul")
           else:
                st.header(f"You need {int(Coffin / 64):,d} Stacks and {Coffin % 64} T3 Crying Soul")
+     elif block=='Graveyard Mix (Mix only)':
+          TC = val*10
+          CC = val*10
+          if ((TC % 64)==0):
+               st.header(f"{int(TC / 64):,d} Stacks of Tombstone - Coffin Mix")
+          else:
+               st.header(f"{int(TC / 64):,d} Stacks and {TC%64} Blocks of Tombstone - Coffin Mix")
+          if ((CC % 64)==0):
+               st.header(f"{int(CC / 64):,d} Stacks of Coffin - Crying Soul Mix")
+          else:
+               st.header(f"{int(CC/64):,d} Stacks and {CC%64} Blocks of Coffin - Crying Soul Mix")
      else:
           CryingSoul = val * 160 
           Tombstone = val * 110  
           Coffin = val * 270
-          Grave=val*10
           if ((Tombstone % 64)==0):
                st.header(f"You need {int(Tombstone/64):,d} Stacks of Tombstone")
           else:
@@ -286,7 +317,6 @@ elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(CryingSoul/64):,d} Stacks of T3 Crying Soul")
           else:
                st.header(f"You need {int(CryingSoul / 64):,d} Stacks and {CryingSoul % 64} T3 Crying Soul ")
-          #st.header(f"You need {int(Grave / 64):,d} Stacks of Tombstone and Coffin Mix and {int(Grave / 64):,d} Stacks of Coffin and Crying Soul Mix")
 
 
 st.caption(f"Any issues ping .comradejay on Discord")
