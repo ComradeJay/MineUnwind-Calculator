@@ -106,7 +106,7 @@ elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Lemon / 64):,d} Stacks of T3 Lemon")
           else:
                st.header(f"You need {int(Lemon / 64):,d} Stacks and {Lemon % 64} T3 Lemon")
-          st.header(f"You need {GO % 64} Stacks of Grass and Orange Mix and {OL % 64} Stacks of Orange and Lemon Mix")
+          st.header(f"You need {int(GO / 64):,d} Stacks of Grass and Orange Mix and {int(OL / 64):,d} Stacks of Orange and Lemon Mix")
 
 
 elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
@@ -148,8 +148,7 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
           Blood = val * 70 
           SilverCoin = val * 154 
           GoldCoin = val * 91 
-          BS=val*7
-          SG=val*7
+          Colo=val*7
           if ((Blood % 64)==0):
                st.header(f"You need {int(Blood/64):,d} Stacks of T3 Blood")
           else:
@@ -162,7 +161,7 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(GoldCoin/64):,d} Stacks of T3 Gold Coin")
           else:
                st.header(f"You need {int(GoldCoin / 64):,d} Stacks and {GoldCoin % 64} T3 Gold Coin ")
-          st.header(f"You need {BS % 64} Stacks of Blood and Silver Coin Mix and {SG % 64} Stacks of Silver and Gold Coin Mix")
+          st.header(f"You need {int(Colo / 64):,d} Stacks of Blood and Silver Coin Mix and {int(Colo / 64):,d} Stacks of Silver and Gold Coin Mix")
 
 elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
@@ -203,8 +202,7 @@ elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
           Amethyst = val * 77 
           GildedGold = val * 168 
           Limonite = val * 105 
-          AG=val*7
-          GL=val*7
+          Cavern=val*7
           if ((Amethyst % 64)==0):
                st.header(f"You need {int(Amethyst/64):,d} Stacks of T3 Amethyst ")
           else:
@@ -217,7 +215,7 @@ elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(Limonite/64):,d} Stacks of T3 Limonite")
           else:
                st.header(f"You need {int(Limonite / 64):,d} Stacks and {Limonite % 64} T3 Limonite ")
-          st.header(f"You need {AG % 64} Stacks of Amethyst and Gilded Gold Mix and {GL % 64} Stacks of Gilded Gold and Limonite Mix")
+          st.header(f"You need {int(Cavern / 64):,d} Stacks of Amethyst and Gilded Gold Mix and {int(Cavern / 64):,d} Stacks of Gilded Gold and Limonite Mix")
 
 elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
@@ -258,8 +256,7 @@ elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
           CryingSoul = val * 160 
           Tombstone = val * 110  
           Coffin = val * 270
-          TC=val*10
-          CC=val*10
+          Grave=val*10
           if ((Tombstone % 64)==0):
                st.header(f"You need {int(Tombstone/64):,d} Stacks of Tombstone")
           else:
@@ -272,7 +269,7 @@ elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
                st.header(f"You need {int(CryingSoul/64):,d} Stacks of T3 Crying Soul")
           else:
                st.header(f"You need {int(CryingSoul / 64):,d} Stacks and {CryingSoul % 64} T3 Crying Soul ")
-          st.header(f"You need {int(TC / 64):,d} Stacks of Tombstone and Coffin Mix and {int(CC / 64):,d} Stacks of Coffin and Crying Soul Mix")
+          st.header(f"You need {int(Grave / 64):,d} Stacks of Tombstone and Coffin Mix and {int(Grave / 64):,d} Stacks of Coffin and Crying Soul Mix")
 
 
 st.caption(f"Any issues ping .comradejay on Discord")
