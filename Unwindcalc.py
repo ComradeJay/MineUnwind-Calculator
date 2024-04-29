@@ -37,18 +37,18 @@ if dim=="City": # 𝟭𝘀𝘁 𝗥𝗲𝗮𝗹𝗺
           ID = val*12
           DE = val*24
           City = (ID+DE/64)
-          if ((Iron % 64)==0):
-               st.header(f"You need {int(Iron / 64):,d} Stacks of T3 Iron {City}")
+          if ((ID % 64)==0):
+               st.header(f"You need {int(ID / 64):,d} Stacks of T3 Iron {City}")
           else:
-               st.header(f"You need {int(Iron / 64):,d} Stacks and {Iron % 64} T3 Iron")
-          if ((Diamond % 64)==0):
-               st.header(f"You need {int(Diamond / 64):,d} Stacks of T3 Diamond")
+               st.header(f"You need {int(ID / 64):,d} Stacks and {ID % 64} T3 Iron")
+          if ((DE % 64)==0):
+               st.header(f"You need {int(DE / 64):,d} Stacks of T3 Diamond")
           else:
-               st.header(f"You need {int(Diamond/64):,d} Stacks and {Diamond%64} T3 Diamond")
-          if ((Emerald % 64)==0):
-               st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Emerald")
-          else:
-               st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Emerald")
+               st.header(f"You need {int(DE/64):,d} Stacks and {DE%64} T3 Diamond")
+          # if ((Emerald % 64)==0):
+          #      st.header(f"You need {int(Emerald / 64):,d} Stacks of T3 Emerald")
+          # else:
+          #      st.header(f"You need {int(Emerald / 64):,d} Stacks and {Emerald % 64} T3 Emerald")
      
      else:
           Diamond = val*36
