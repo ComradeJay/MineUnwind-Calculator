@@ -131,7 +131,7 @@ elif dim=="Farm": # 𝟮𝗻𝗱 𝗥𝗲𝗮𝗹𝗺
 elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
-          ('Copper - Blood Mix','Blood - Silver Coin Mix','Silver Coin - Gold Coin Mix','Colosseum Mix'))
+          ('Copper - Blood Mix','Blood - Silver Coin Mix','Silver Coin - Gold Coin Mix','Colosseum Mix', 'Colosseum Mix (Mix only)'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Copper - Blood Mix':
           a=val*8
@@ -194,7 +194,7 @@ elif dim=="Colosseum": # 𝟯𝗿𝗱 𝗥𝗲𝗮𝗹𝗺
 elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
-          ('Calcite - Amethyst Mix','Amethyst - Gilded Gold Mix','Gilded Gold - Limonite Mix','Cavern Mix'))
+          ('Calcite - Amethyst Mix','Amethyst - Gilded Gold Mix','Gilded Gold - Limonite Mix','Cavern Mix', 'Cavern Mix (Mix only)'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Calcite - Amethyst Mix':
           a=val*9
@@ -258,7 +258,7 @@ elif dim=="Cavern": # 𝟰𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
 elif dim=="Graveyard": # 𝟱𝘁𝗵 𝗥𝗲𝗮𝗹𝗺
      block = st.radio(
           "",
-          ('Necrosol - Tombstone Mix','Tombstone - Coffin Mix','Coffin - Crying Soul Mix','Graveyard Mix'))
+          ('Necrosol - Tombstone Mix','Tombstone - Coffin Mix','Coffin - Crying Soul Mix','Graveyard Mix', 'Graveyard Mix (Mix only)'))
      val = int(st.text_input('How Many Blocks?', 0))
      if block == 'Necrosol - Tombstone Mix':
           a=val*10
